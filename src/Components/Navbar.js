@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 //import { ReactDOM } from 'react-dom';
 import { Link } from 'react-router-dom';
+import Button from './Button';
 
 
 function Navbar() {
 
 const [click, setClick] = useState(false);
+const [button, setButton] = useState(true);
 
 function handleClick () {
     setClick(!click)
@@ -15,6 +17,15 @@ function closeMobileMenu() {
     setClick(false)
 }
 
+function showButton(){
+    if(window.innerWidth <= 960){
+        setButton(false);
+    }else{
+        setButton(true);
+    }
+};
+
+window.addEventListener("resize", showButton);
 
   return (
     <>
@@ -53,7 +64,7 @@ function closeMobileMenu() {
                 </Link>
             </li>
         </ul>
-
+        {button && <Button buttonStyle='btn--outline'>ORDER ONLINE</Button>}
     </div>    
     </nav> 
     </>
