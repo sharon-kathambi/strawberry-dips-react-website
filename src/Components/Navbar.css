@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    background: /*linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23)#dd8ea4 0%, #f2e9eb 100%);*/ #fff;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
   }
   
   .navbar-logo {
-    color: #fff;
+    color: /*#fff*/ #242424;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -50,7 +50,7 @@
   }
   
   .nav-links {
-    color: #fff;
+    color: #242424;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -59,12 +59,12 @@
   }
   
   .nav-links:hover {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid #fedcd2;
     transition: all 0.2s ease-out;
   }
   
   .fa-bars {
-    color: #fff;
+    color: #242424;
   }
   
   .nav-links-mobile {
@@ -93,7 +93,7 @@
     }
   
     .nav-menu.active {
-      background: #242222;
+      background: #df744a;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -108,7 +108,7 @@
     }
   
     .nav-links:hover {
-      background-color: #fff;
+      background-color: #fedcd2;
       color: #242424;
       border-radius: 0;
     }
@@ -131,7 +131,7 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: #242424;
       font-size: 2rem;
     }
   
@@ -151,7 +151,7 @@
     }
   
     .nav-links-mobile:hover {
-      background: #fff;
+      background: #df744a;
       color: #242424;
       transition: 250ms;
     }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 //import { ReactDOM } from 'react-dom';
 import { Link } from 'react-router-dom';
 import Button from './Button';
@@ -27,6 +27,10 @@ function showButton(){
 };
 
 window.addEventListener('resize', showButton);
+
+useEffect(() => {
+    showButton()
+}, []);
 
   return (
     <>
