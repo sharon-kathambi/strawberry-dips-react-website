@@ -5,7 +5,12 @@ import './HeroSection.css'
 
 function HeroSection() {
   return (
-    <div className='hero-container'>
+    <div className='hero-container'style={{
+        backgroundColor: 'blue',
+        width: '100px',
+        height: '100px'
+      }} >
+        <video src='/public/videos/video-1.mp4' autoPlay loop muted />
         <h1>CHOCOLATE COVERED TREATS GIFT SHOP</h1>
         <p>Same day gift delivery in Nairobi</p>
         <div className='hero-btns'>
