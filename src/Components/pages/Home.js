@@ -1,7 +1,8 @@
+import React from 'react'
 import '../../App.css'
 import HeroSection from '../HeroSection'
 
-import React from 'react'
+
 
 function Home() {
   return (
@@ -11,4 +12,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;
