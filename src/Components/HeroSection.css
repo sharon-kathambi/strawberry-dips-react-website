@@ -9,7 +9,7 @@ video {
 
 
 .hero-container {
-   /* background-color: linear-gradient(90deg, #dd8ea4 0%, #f2e9eb 100%);*/
+   background-color: linear-gradient(90deg, #dd8ea4 0%, #f2e9eb 100%);
     height: 100vh;
     width: 100%;
     display: flex;
