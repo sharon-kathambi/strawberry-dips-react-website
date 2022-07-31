@@ -1,6 +1,14 @@
 import React from 'react';
 import '../App.css';
+import Footer from '../Components/Footer';
+import Pricing from '../Components/Pricing';
 
 export default function Products() {
-  return <h1 className='products'>PRODUCTS</h1>;
+  return (
+    <div>
+      <Pricing />
+      <Footer />
+    </div>
+  )
+  ;
 }
