@@ -14,7 +14,7 @@ function CardItem(props) {
           <figure className='cards__item__pic-wrap' data={props.label}>
             <img
               className='cards__item__img'
-              src = {props.src}
+              src = "/images/img-2.jpg"
               alt='Travel Image'
               
             />
