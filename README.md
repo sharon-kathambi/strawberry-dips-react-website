@@ -8,6 +8,9 @@ By {Sharon Mwenda}
 {This application provides a list of travel destinations and packages for a user who would like to book a trip through the app. }
 
 # Setup/Installation Requirements
+Deployed frontend link : https://spontaneous-fox-d9dbf6.netlify.app/
+
+Deployed backend link: https://morning-atoll-88058.herokuapp.com/
 
 
 Repository link for the API
