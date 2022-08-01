@@ -1,7 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './FormStyles.css'
 
 const Form = () => {
+    const[users, setUsers] = useState([])
+    const[name, setName] = useState("");
+    const[email, setEmail] = useState("");
+    const[subject, setSubject] = useState("");
+    const[details, setDetails] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const user = {
+            name : name,
+            email: email,
+            subject: subject, 
+            details: details
+        };
+
+    
+        fetch("http://localhost:3005/user", {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body:JSON.stringify(user)
+     }).then((res)=> res.JSON())
+     .then((user)=> {
+        setUsers((users) => [user, ...users]);
+        setName("");
+        setEmail("");
+        setSubject("");
+        setDetails("");
+     })
+     .catch((err) => {
+        console.log(err.message)
+     })
+    }
     return (
         <div className='form'>
             <form>
@@ -13,7 +47,7 @@ const Form = () => {
                 <input type='text'></input>
                 <label>Details</label>
                 <textarea rows='6' placeholder='Type a short message here' />
-                <button className='btn'>Submit</button>
+                <button className='btn' onSubmit={handleSubmit}>Submit</button>
             </form>
         </div>
     )

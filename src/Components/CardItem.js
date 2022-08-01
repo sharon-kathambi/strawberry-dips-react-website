@@ -10,11 +10,11 @@ function CardItem(props) {
   console.log(props)
   return (
       <li className='cards__item'>
-        <Link className='cards__item__link' to={"/services/" + props.id}>
+        <Link className='cards__item__link' to="/services">
           <figure className='cards__item__pic-wrap' data={props.label}>
             <img
               className='cards__item__img'
-              src = "/images/img-9.jpg"
+              src = {props.src}
               alt='Travel Image'
               
             />
