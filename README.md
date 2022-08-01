@@ -1,19 +1,19 @@
 # Travelocity App
 This project was bootstrapped with Create React App
 
-#{Travelocity App}
 {The application helps the user find and book a travel experience of their choice }, {2022}
 By {Sharon Mwenda}
-Description
+
+# Description
 {This application provides a list of travel destinations and packages for a user who would like to book a trip through the app. }
 
-Setup/Installation Requirements
+# Setup/Installation Requirements
 
 
 Repository link for the API
 https://github.com/sharon-kathambi/json-server-template
 
-Technologies Used
+# Technologies Used
 {This web App uses
 
 HTML
