@@ -6,7 +6,8 @@ function Cards() {
   const [travel, setTravel] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3005/travel")
+    //fetch("http://localhost:3005/travel")
+    fetch(`${process.env.REACT_APP_API_URL}/travel`)
     .then((r) => r.json())
     .then((data) => setTravel(data))
   },[])

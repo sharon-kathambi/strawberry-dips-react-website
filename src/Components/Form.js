@@ -18,7 +18,7 @@ const Form = () => {
         };
 
     
-        fetch("http://localhost:3005/user", {
+    fetch(`${process.env.REACT_APP_API_URL}/user`, {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"
