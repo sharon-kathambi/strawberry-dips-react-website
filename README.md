@@ -10,7 +10,7 @@ By {Sharon Mwenda}
 # Setup/Installation Requirements
 Deployed frontend link : https://spontaneous-fox-d9dbf6.netlify.app/
 
-Deployed backend link: https://morning-atoll-88058.herokuapp.com/
+Deployed backend link: https://travelocity-api.onrender.com
 
 
 Repository link for the API
