@@ -11,10 +11,8 @@ function CardItem(props) {
           <figure className='cards__item__pic-wrap' data={props.label}>
             <img
               className='cards__item__img'
-              src = "/images/img-2.jpg"
-              alt='Travel'
-              
-            />
+              src = {props.src}
+              alt='Travel' />
           </figure>
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{props.text}</h5>
